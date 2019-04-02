@@ -15,6 +15,7 @@ func main() {
 
 	http.HandleFunc("/hello", handler.Hello)
 	http.HandleFunc("/", handler.Hoge)
+	http.HandleFunc("/dbtest", handler.Dbtest)
 
 	http.ListenAndServe(":"+PORT, nil)
 }
